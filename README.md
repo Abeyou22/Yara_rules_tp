@@ -1,33 +1,109 @@
 # Yara_rules
 
 ## Summary
-1. [Introduction](#Introduction)
-2. [Planning](#Planning)
-3. [Installation](#Installation)
-4. [ToDo](#ToDo)
-5. [Requirements](#Requirements)
-6. [Usage](#Usage)
-7. [Sources](#Sources)
+- [Yara\_rules](#yara_rules)
+  - [Summary](#summary)
+  - [Introduction](#introduction)
+    - [Formation](#formation)
+  - [Planning](#planning)
+  - [Installation](#installation)
+  - [ToDo](#todo)
+  - [Usage](#usage)
+  - [Conclusion](#conclusion)
+  - [Sources](#sources)
 
 
 <a name="Introduction"></a>
 ## Introduction
+This Yara project aim to introduce to the basics of Yara and to define a way to exploit those rules on investigation.
+
+We will first update the formation section and pursue with a way to deploy and test the rules on a system.
+After those step we will build a TP formation on a VM to experiment the recognition of some pattern. 
+
+Finally we will build a folder with many rules, maybe a way to autogenerate them and the template to respect if you want to contributeto the project.
+
+### Formation
+To begin you can learn the basic of Yara on init.md 
+
+If you prefer, the full documentation of the Language is available on this website https://yara.readthedocs.io/en/v4.3.2/index.html
 
 <a name="Planning"></a>
 ## Planning
 
+
 <a name="Installation"></a>
 ## Installation
+
+**Linux installation**
+
+- First, update your packet manager by running:
+  
+```bash
+sudo apt update -y && sudo apt upgrade -y
+```
+
+- Installing YARA on your computer
+  
+```bash
+sudo apt install yara
+```
+
+After running the command above, you can now access YARA from your command line.
+
+**Windows installation**
+
+- Download this [zip file](https://github.com/VirusTotal/yara/releases/tag/v4.2.0) from the YARAs GitHub page.
+- Unzip the file and run the `yara.exe` executable.
+  
+For Mac users, you can use `brew` to install YARA.
 
 <a name="ToDo"></a>
 ## ToDo
 
-<a name="Requirements"></a>
-## Requirements
+| Level         | Objectif | Page |  Charge |
+|--------------|-----------|-----------|-----------|
+| Level 1 | Saisir les bases de yara | init.md | LR |
+| Level 2 | Trouver le png : faite une règle qui detecte les png (et autre) | init.md | TBD |
+| Level X | Faire un reverse : en ayant le code d'une règle, construisez un dossier qui les déclenche toutes | init.md | TBD |
+| Level 3 | Trouver un .exe caché dans un png (ou autre) (4/5 png et doivent en detecter un qui est exe) | init.md | TBD |
+| Level X | Dans la grosse base de donnée trouver un fichier fishing/leak info/ .exe| init.md | TBD |
+| Level X | Avoir une règle qui lance d'autre règle Yara | init.md | TBD |
+| Level X | Faire un python qui lance des Yara | init.md | PK |*
+| Level X | Dans une extraction mail, créer une règle YARA capable d'exclure les mails perso et de trouver les mails mentionnant X | init.md | LR |
+| Level X | Faire un python qui tourne en boucle pour faire IDS / https://yaids.io/ | init.md | PK |
+| Level X | Faire un reverse : en ayant le code d'une règle, construisez un dossier qui les déclenche toutes | init.md | TBD |
+| Level X | Règle Yara qui detecte un malware (style travail Owen) plein de .exe trouver celui qui est malveillant | init.md | OL |
+| Level X | Auto générer une règle avec yarGen | init.md | OL |
+| Level X | Test Valhalla | init.md | LR |
 
+- Voir quand on fait les règles python à créer un rapport en .md 
 
 <a name="Usage"></a>
 ## Usage
 
+- Faire un IDS
+- Analyser des fichiers
+
+
+<a name="Conclusion"><a>
+## Conclusion
+Where you have the sample malware file, you might decide to auto-generate YARA using available tools such as `yaraGen`. `yaraGen` is a Python tool developed by Florian Roth that aids in generating YARA rules when provided with the malware sample. 
+
+To install `yarGen` check this [GitHub page](https://github.com/Neo23x0/yarGen) for the instructions. An important point, before using yarGen, make sure you update its database to get accurate rule generation. After we have generated a rule file, you can tweak it to your preference.
+
+Another interesting tool to look at is `Valhalla`. This is a YARA rule repository where you can find a YARA rule for common malware. You can access Valhalla [here](https://valhalla.nextron-systems.com/info/search). 
+
+You can also visit this GitHub [page](https://github.com/DarkenCode/yara-rules) to check out more YARA rules. Python also has a YARA library. We can use YARA from our Python scripts. To import this library simply: `import yara`.
+
 <a name="Sources"></a>
 ## Sources
+| Sujet         | Lien |
+|--------------|-----------|
+| Yara documentation | https://yara.readthedocs.io/en/v4.3.2/index.html |
+| Nextron system | https://www.nextron-systems.com/2015/02/16/write-simple-sound-yara-rules/ |
+| Nextron system 2| https://www.nextron-systems.com/2015/10/17/how-to-write-simple-but-sound-yara-rules-part-2/ |
+| Tryhackme investigation Windows 2.0 | https://tryhackme.com/room/investigatingwindows2    | 
+| Article medium yara | https://medium.com/@nidhi.trivedi/yara-cheat-sheet-585eae339e63    | 
+| Formation YARA Andreas | https://www.first.org/resources/papers/conference2014/first_2014_-_schuster-_andreas_-_yara_basic_and_advanced_20140619.pdf   | 
+| Formation velocyraptor| https://docs.velociraptor.app/docs/forensic/searching/    | 
+| Github rules YARA | https://github.com/section-engineering-education/engineering-education/tree/master/content/articles/getting-started-with-yara-for-malware-analysis   | 
