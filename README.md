@@ -62,8 +62,8 @@ For Mac users, you can use `brew` to install YARA.
 
 | Level         | Objectif | Page |  Charge |
 |--------------|-----------|-----------|-----------|
-| Level 1 | Saisir les bases de yara | init.md | LR |
-| Level 2 | Trouver le png : faite une règle qui detecte les png (et autre) | init.md | TBD |
+| Level 1 | Saisir les bases de yara | [init](Exercices/1_ExInit/consignesInit.md)|  LR |
+| Level 2 | Trouver le png : faite une règle qui detecte les png (et autre) | [Exercice 2](Exercices/2_ExFindPng/consignes.md) | TBD |
 | Level X | Faire un reverse : en ayant le code d'une règle, construisez un dossier qui les déclenche toutes | init.md | TBD |
 | Level 3 | Trouver un .exe caché dans un png (ou autre) (4/5 png et doivent en detecter un qui est exe) | init.md | TBD |
 | Level X | Dans la grosse base de donnée trouver un fichier fishing/leak info/ .exe| init.md | TBD |
@@ -77,7 +77,6 @@ For Mac users, you can use `brew` to install YARA.
 | Level X | Test Valhalla | init.md | LR |
 
 - Voir quand on fait les règles python à créer un rapport en .md 
-
 <a name="Usage"></a>
 ## Usage
 
