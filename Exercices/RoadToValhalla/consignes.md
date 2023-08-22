@@ -6,7 +6,7 @@
 Dans ce court exercice nous allons nous concentrer sur Valhalla une base règle YARA. 
 L'objectif est d'extraire de ValhallaAPI l'ensemble des règles YARA gratuites.
 
-Voici les différentes documentation utiles si vous voulez chercher tous seuls:
+Voici les différentes documentation utiles si vous voulez chercher seul:
 - [Valhalla Nextron](https://www.nextron-systems.com/valhalla/) 
 - [Valhalla Web](https://valhalla.nextron-systems.com/) 
 - [Valhalla Github](https://github.com/NextronSystems/valhallaAPI) 
