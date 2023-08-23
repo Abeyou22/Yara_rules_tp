@@ -55,6 +55,7 @@ Pour chaque condition, extrayez les règles YARA correspondantes de Valhalla.
 - Combien de règle le Valhalla possède t'il pour la démo ?
 - Combien de règle de type suspicious ? (Score : 60-74) ?
 - Donnez 6 tags utilisés par l'API.
-- Combien de règles comportent le tag 'MIDDLE-EAST' ?
-- Combien de règle 
+- Combien de règles comportent le tag 'MIDDLE_EAST' ?
+- Combien de règles sortent avec le keyword '2023_24055'
+- Que font-elles ? Quel est le score de la CVE associée ?
 

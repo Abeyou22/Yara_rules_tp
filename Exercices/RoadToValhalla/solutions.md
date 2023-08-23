@@ -1,0 +1,20 @@
+## Questions
+- Combien de règle le Valhalla possède t'il pour la démo ? 
+  - response = v.get_rules_text()
+  - 2932
+- Combien de règle de type suspicious ? (Score : 60-74) ?
+  - response = v.get_rules_text(score=75)
+  - response = v.get_rules_text(score=60)
+  - Puis soustraire le nombre de résultat 
+  - (2588 - 1774) = 814
+- Donnez 6 tags utilisés par l'API.
+  - DEMO, SUSP, CVE_2023_35078, FILE, MAL, HKTL, METASPLOIT, T1105 etc ..
+- Combien de règles comportent le tag 'MIDDLE_EAST' ?
+  - response = v.get_rules_text(tags=['MIDDLE_EAST'])
+  - 55
+- Combien de règles sortent avec le keyword '2023_24055'
+  - response = v.get_rules_text(search="2023_24055")
+  - 1
+- Que font-elles ? Quel est le score de la CVE associée ?
+  - https://nvd.nist.gov/vuln/detail/CVE-2023-24055
+  - 55
