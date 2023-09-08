@@ -43,7 +43,7 @@ sudo apt update -y && sudo apt upgrade -y
 ```
 
 - Installing YARA on your computer
-  
+  <!--  -->
 ```bash
 sudo apt install yara
 ```
@@ -64,17 +64,23 @@ For Mac users, you can use `brew` to install YARA.
 |--------------|-----------|-----------|-----------|
 | Level 1 | Saisir les bases de yara | [init](Exercices/1_ExInit/consignesInit.md)|  LR |
 | Level 2 | Trouver le png : faite une règle qui detecte les png (et autre) | [Exercice 2](Exercices/2_ExFindPng/consignes.md) | TBD |
+| Level 3 | YARA with python | [Exercice 3](Exercices/5_YaraWithPy/consignes.md)| PK |
+| Level 4 | Enrichissemment| [Exercice 4](Exercices/6_Enrichment/consignes.md)| PK |
+| Level 5 | Reach Valhalla | [Exercice 5](Exercices/5_RoadToValhalla/consignes.md) | LR |
+| Level 6 | Prise en main YarGen| [Exercice 6](Exercices/2_ExFindPng/consignes.md)| OL |
+| Level 7 | Faire un python qui tourne en boucle pour faire IDS / https://yaids.io/ | [Exercice 7](Exercices/) | PK |
+| Level 8 | Bat Malware| [Exercice 8](Exercices/8_BatMalware/consignes.md) | CH |
+| Level 9 | ExLevel Malware | [Exercice 9](Exercices/9_ExLvlMalware/consignes.md) | OL |
+
+
+Idées
+
+| Level         | Objectif | Page |  Charge |
+|--------------|-----------|-----------|-----------|
 | Level X | Faire un reverse : en ayant le code d'une règle, construisez un dossier qui les déclenche toutes | init.md | TBD |
-| Level 3 | Trouver un .exe caché dans un png (ou autre) (4/5 png et doivent en detecter un qui est exe) | init.md | TBD |
+| Level X | Trouver un .exe caché dans un png (ou autre) (4/5 png et doivent en detecter un qui est exe) | init.md | TBD |
 | Level X | Dans la grosse base de donnée trouver un fichier fishing/leak info/ .exe| init.md | TBD |
-| Level X | Avoir une règle qui lance d'autre règle Yara | init.md | TBD |
-| Level X | Faire un python qui lance des Yara | init.md | PK |*
-| Level X | Dans une extraction mail, créer une règle YARA capable d'exclure les mails perso et de trouver les mails mentionnant X | init.md | LR |
-| Level X | Faire un python qui tourne en boucle pour faire IDS / https://yaids.io/ | init.md | PK |
-| Level X | Faire un reverse : en ayant le code d'une règle, construisez un dossier qui les déclenche toutes | init.md | TBD |
-| Level X | Règle Yara qui detecte un malware (style travail Owen) plein de .exe trouver celui qui est malveillant | init.md | OL |
-| Level X | Auto générer une règle avec yarGen | init.md | OL |
-| Level X | Test Valhalla | init.md | LR |
+| Level X | Dans une extraction mail, créer une règle YARA capable d'exclure les mails perso et de trouver les mails mentionnant X | init.md | TBD |
 
 - Voir quand on fait les règles python à créer un rapport en .md 
 <a name="Usage"></a>
