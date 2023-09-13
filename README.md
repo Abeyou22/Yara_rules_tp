@@ -59,17 +59,17 @@ For Mac users, you can use `brew` to install YARA.
 <a name="ToDo"></a>
 ## ToDo
 
-| Level         | Objectif | Page |  Charge |
-|--------------|-----------|-----------|-----------|
-| Level 1 | Saisir les bases de yara | [init](Exercices/1_ExInit/consignesInit.md)|  LR |
-| Level 2 | Trouver le png : faite une règle qui detecte les png (et autre) | [Exercice 2](Exercices/2_ExFindPng/consignes.md) | TBD |
-| Level 3 | YARA with python | [Exercice 3](Exercices/5_YaraWithPy/consignes.md)| PK |
-| Level 4 | Enrichissemment| [Exercice 4](Exercices/6_Enrichment/consignes.md)| PK |
-| Level 5 | Reach Valhalla | [Exercice 5](Exercices/5_RoadToValhalla/consignes.md) | LR |
-| Level 6 | Prise en main YarGen| [Exercice 6](Exercices/2_ExFindPng/consignes.md)| OL |
-| Level 7 | Faire un python qui tourne en boucle pour faire IDS / https://yaids.io/ | [Exercice 7](Exercices/) | PK |
-| Level 8 | Bat Malware| [Exercice 8](Exercices/8_BatMalware/consignes.md) | CH |
-| Level 9 | ExLevel Malware | [Exercice 9](Exercices/9_ExLvlMalware/consignes.md) | OL |
+| Level         | Objectif | Page |  Charge | Questionnaire |
+|--------------|-----------|-----------|-----------|-----------|
+| Level 1 | Saisir les bases de yara | [init](Exercices/1_ExInit/consignesInit.md)| LR |[Initiation](#https://forms.office.com/e/UWZBceHr4m)|
+| Level 2 | Trouver le png : faite une règle qui detecte les png (et autre) | [Exercice 2](Exercices/2_ExFindPng/consignes.md) | TBD | |
+| Level 3 | YARA with python | [Exercice 3](Exercices/5_YaraWithPy/consignes.md)| PK | |
+| Level 4 | Enrichissemment| [Exercice 4](Exercices/6_Enrichment/consignes.md)| PK | |
+| Level 5 | Reach Valhalla | [Exercice 5](Exercices/5_RoadToValhalla/consignes.md) | LR | |
+| Level 6 | Prise en main YarGen| [Exercice 6](Exercices/2_ExFindPng/consignes.md)| OL | |
+| Level 7 | Faire un python qui tourne en boucle pour faire IDS / https://yaids.io/ | [Exercice 7](Exercices/) | PK | |
+| Level 8 | Bat Malware| [Exercice 8](Exercices/8_BatMalware/consignes.md) | CH | |
+| Level 9 | ExLevel Malware | [Exercice 9](Exercices/9_ExLvlMalware/consignes.md) | OL | |
 
 
 Idées
