@@ -1,25 +1,27 @@
 # Intro
 
-This formation looks at YARA, a malware analysis tool used to detect patterns of malware characteristics in files, using a rule-based approach. We will focus on what YARA is, how to install it in Windows and Linux environments, and finally handle its syntax.
+Cette formation porte sur YARA, un outil d'analyse de fichiers malveillants, utilisé pour détecter des patterns malveillants dans des fichiers, en utilisant des règles de detection. 
 
-### Table of contents
+### Table des matières
 - [Intro](#intro)
-    - [Table of contents](#table-of-contents)
-    - [What is YARA?](#what-is-yara)
-    - [YARA synthax rules](#yara-synthax-rules)
+    - [Table des matières](#table-des-matières)
+    - [Qu'est-ce que YARA ?](#quest-ce-que-yara-)
+    - [Règles de synthèse de YARA](#règles-de-synthèse-de-yara)
       - [Header](#header)
       - [Metadata](#metadata)
       - [Strings](#strings)
       - [Condition](#condition)
       - [Comments](#comments)
-    - [Running YARA rules](#running-yara-rules)
-      - [Your turn](#your-turn)
+    - [Exécution des règles de YARA](#exécution-des-règles-de-yara)
+      - [A vous de jouer](#a-vous-de-jouer)
+    - [Experiment](#experiment)
 
-### What is YARA?
-YARA is an open-source tool used for malware analysis. YARA uses a rule-based approach to match patterns of malware characteristics in files. The rules usually contain strings, regular expressions, and special operators that describe certain characteristics of malware families followed by a boolean operation.
+### Qu'est-ce que YARA ?
+YARA est un outil open-source utilisé pour l'analyse des fichiers malveillants. YARA utilise des règles pour faire correller les caractéristiques des fichiers malveillants avec les fichiers analysés. Les règles contiennent généralement des chaînes, des expressions régulières et des opérateurs spéciaux qui décrivent certaines caractéristiques des familles de logiciels malveillants.
 
-### YARA synthax rules
-Here is an exemple of a YARA rule:
+### Règles de synthèse de YARA
+Voici un exemple de règle YARA :
+
 
 ```c
 rule SectionSample{
@@ -35,9 +37,9 @@ rule SectionSample{
    any of them //checks whether a file has any of the above rules //$a or $b or $c
 }
 ```
-The above rule is telling YARA that any file containing one of the three strings must be reported as silent_banker. This is just a simple example, more complex and powerful rules can be created by using [wild-cards](#wild-cards), [case-insensitive strings](#case-insensitive-strings), [regular expressions](#regular-expressions), [special operators](#special-operators) and many other features.
+La règle ci-dessus indique à YARA que tout fichier contenant l'une des trois chaînes doit être signalé par la règle. Il s'agit d'un simple exemple, des règles plus complexes et plus puissantes peuvent être créées en utilisant des [wild-cards](#wild-cards), des [case-insensitive-strings](#case-insensitive-strings), des [expression régulière](#regular-expressions), ou des [opérateurs spéciaux](#special-operators) et bien d'autres fonctionnalités.
 
-First let explain each section of the example.
+Commençons par expliquer chaque section de l'exemple.
 
 #### Header
 
@@ -46,11 +48,11 @@ rule SectionSample{
 }
 ```
 
-Every YARA rule has the keyword `rule` as seen in the first line of this rule. The keyword is then followed by a rule name or identifier, in our case, it’s `SectionSample`.
+Chaque règle YARA comporte le mot-clé `rule`, comme le montre la première ligne de cette règle. Le mot-clé est ensuite suivi d'un nom de règle ou d'un identifiant, dans notre cas, il s'agit de `SectionSample`.
 
-- The first character cannot be a digit, like in the C programming language. 
-- All alphanumeric characters are allowed
-- Yara keywords are not allowed : https://yara.readthedocs.io/en/v3.6.3/writingrules.html#id2 
+- Le premier caractère ne peut pas être un chiffre, comme dans le langage de programmation C.
+- Tous les caractères alphanumériques sont autorisés
+- Les [mots-clés Yara](#https://yara.readthedocs.io/en/v3.6.3/writingrules.html#id2 )ne sont pas autorisés
 
 
 #### Metadata
@@ -63,11 +65,11 @@ Every YARA rule has the keyword `rule` as seen in the first line of this rule. T
     description = “Simple YARA rule”
 ```
 
-This line contains the metadata of the YARA rule. 
+Cette ligne contient les métadonnées de la règle YARA. 
 
-They can be added to help identify the files that were picked up by a certain rule. The metadata identifiers are always followed by an equal sign and the set value. The assigned values can be strings, integers, or a Boolean value. Note that identifier/value pairs defined in the metadata section can’t be used in the condition section, their only purpose is to store additional information about the rule.
+Elles peuvent être ajoutées pour aider à identifier les fichiers qui ont été pris en charge par une certaine règle. Les identificateurs de métadonnées sont toujours suivis d'un signe égal et de la valeur définie. Les valeurs attribuées peuvent être des chaînes de caractères, des nombres entiers ou une valeur booléenne. Notez que les paires identifiant/valeur définies dans la section des métadonnées ne peuvent pas être utilisées dans la section des conditions, leur seul but étant de stocker des informations supplémentaires sur la règle.
 
-In this section, you can include the author's name, the date you created the rule, a description of what the rule does etc. 
+Dans cette section, vous pouvez inclure le nom de l'auteur, la date de création de la règle, une description de ce que fait la règle, etc. Ce que vous souhaitez
 
 #### Strings
 
@@ -78,9 +80,8 @@ In this section, you can include the author's name, the date you created the rul
     $c = "UVODFRYSIHLNWPEJXQZAKCBGMT"
 ```
 
-
-The `strings` section contains values we want to search for in files. This section can contain text, hexadecimal, or regular expressions. 
-`$[variableName]` are the variables where we will store our strings. Here we have 3 variables : $a $b $c
+La section `strings` contient les valeurs que nous voulons rechercher dans les fichiers. Cette section peut contenir du texte, de l'hexadécimal ou des expressions régulières. 
+`$[nomVariable]` sont les variables dans lesquelles nous allons stocker nos chaînes de caractères. Ici, nous avons 3 variables : $a $b $c
 
 #### Condition
 
@@ -88,51 +89,52 @@ The `strings` section contains values we want to search for in files. This secti
   condition:
    any of them //checks whether a file has any of the above rules
 ```
-Conditions are boolean expressions that guide the YARA engine in matching the strings. This is the only section required to ceate a Yara rules. 
+Les conditions sont des expressions booléennes qui guident le moteur YARA dans la correspondance des chaînes. Il s'agit de la seule section requise pour créer une règle Yara. 
 
-This section specifies when the rule result is true for the object (file) that is under investigation.
-You can also include another rule as part of your conditions.
+Cette section précise quand le résultat de la règle est vrai pour l'objet (fichier) qui fait l'objet de l'enquête.
+Vous pouvez également inclure une autre règle dans vos conditions.
 
-Here, our sample rule will check if a file has any of the two strings `a`, `b` and `c`. 
+Ici, notre exemple de règle vérifiera si un fichier contient l'une des deux chaînes de caractères `a`, `b` et `c`. 
 
-Conditions can also include the [location](#locationSearch) of a string in the file. This helps especially in identifying the file type and hence reducing the chances of our rules producing false positives.
+Les conditions peuvent également inclure l'[emplacement](#locationSearch) d'une chaîne de caractères dans le fichier. Cela permet notamment d'identifier le type de fichier et donc de réduire les risques que nos règles produisent des faux positifs.
 
-We can also include file size as a condition when we want to know the approximate size of a malware file. Malware researchers do share the file size of malware files and we can use that to enhance our YARA rules.
+Nous pouvons également inclure la taille du fichier comme condition lorsque nous voulons connaître la taille approximative d'un fichier de logiciel malveillant. Les chercheurs de logiciels malveillants partagent la taille des fichiers de logiciels malveillants et nous pouvons l'utiliser pour améliorer nos règles YARA.
 
 #### Comments
-YARA rules can also contain comments just like in other programming languages. To write comments in YARA, we use `//` for single-line comments and `/* */` for multi-line comments.
+Les règles YARA peuvent également contenir des commentaires, comme dans d'autres langages de programmation. Pour écrire des commentaires dans YARA, nous utilisons `//` pour les commentaires sur une seule ligne et `/* */` pour les commentaires sur plusieurs lignes.
 
-We save YARA rules as files with the extension `. yar`. A single `. yar` file can contain more than one YARA rule. 
+Les règles YARA sont sauvegardées dans des fichiers portant l'extension `. yar`. Un seul fichier `. yar` peut contenir plus d'une règle YARA. 
 
-### Running YARA rules
+### Exécution des règles de YARA
 
-#### Your turn
-- Open any code editor of your choice 
--  Copy our sample YARA rule and save the file as a `sample. yar` or any random name 
--  Create another text file and add `Readers` to it
--  Add some random text to the file and save it as a text file (`.txt`). 
--  Ouvrez un terminal de commande 
--  Go to the folder where your file and yaraRules are 
--  Enter `yara sample.yar text.txt` in the terminal 
--  In the terminal if your text file respect one of the condition, it will print 'SectionSample text.txt` 
--  Retry after modifying your text file to respect one of the condition 
+#### A vous de jouer
+- Ouvrez l'éditeur de code de votre choix 
+- Copiez notre exemple de règle YARA et enregistrez le fichier sous le nom `sample.yar` ou tout autre nom. 
+- Créez un autre fichier texte et ajoutez-y du texte.
+- Ajoutez un texte aléatoire au fichier et enregistrez-le en tant que fichier texte (`.txt`). 
+- Ouvrez un terminal de commande 
+- Allez dans le dossier où se trouvent votre fichier et yaraRules 
+- Entrez `yara sample.yar text.txt` dans le terminal 
+- Dans le terminal, si votre fichier texte respecte l'une des conditions, il affichera 'SectionSample text.txt`. 
+- Réessayez après avoir modifié votre fichier texte pour qu'il respecte l'une des conditions. 
 
-Reminder in a Linux terminal: 
-  - The `cd FolderName` command moves to the FolderName folder.  
-  - The `cd ..` command moves to the root folder of the one you are in 
-  - The `ls` command displays the contents of the folder you're currently in
+Rappel dans un terminal Linux : 
+  - La commande `cd NomDossier` amène dans le dossier NomDossier.  
+  - La commande `cd ..` amène dans le dossier racine de celui dans lequel vous vous trouvez 
+  - La commande `ls` affiche le contenu du dossier dans lequel vous vous trouvez.
 
-To run our YARA rule we will use the keyword `yara` to access the yara engine, for Windows you have to specify either the `yara32` or `yara64` bit version. The name of the rule file (the `. yar` file) and then the file we want to test. 
+Pour exécuter notre règle YARA, nous utiliserons le mot-clé `yara` pour accéder au moteur yara, pour Windows vous devez spécifier soit la version `yara32` soit la version `yara64` bit. Le nom du fichier de la règle (le fichier `. yar`) et ensuite le fichier que nous voulons tester. 
 
 ```bash 
 ┌──(yara@yara-virtual-machine)-[~/Documents/Yara_rules/Exercices/demo]
 └─$ yara sample.yar text.txt
 SectionSample test.txt
 ```
-Sometimes, we might want to check our entire file system, and hence we can use `. ` in place of the file we want to test.
+Parfois, nous pouvons vouloir vérifier l'ensemble de notre système de fichiers, et nous pouvons donc utiliser `. ` à la place du fichier que nous voulons tester.
 
 
-Checking over one file, i.e. the rest of the folder.
+Vérifier un fichier, c'est-à-dire le reste du dossier.
+
 
 ```bash
 ┌──(yara@yara-virtual-machine)-[~/Documents/Yara_rules/Exercices/demo]
@@ -143,13 +145,13 @@ HexSample ./sample.yar
 headmind ./sample.yar
 SectionSample ./text.txt
 ```
-Note that sample.yar respect all it's own rules as expected.
+Notez que sample.yar respecte toutes ses propres règles comme prévu.
 
-If you want the rule to recursively test all folders use the `-r `/ `--recursive` parameter 
+Si vous voulez que la règle teste récursivement tous les dossiers, utilisez le paramètre `-r `/ `--recursive`. 
 
-If you want to print the meta-data of the rule, use the `--print-meta` / `-m` parameter. And to print only the fail match `--negate` / `-n`.
+Si vous voulez imprimer les méta-données de la règle, utilisez le paramètre `--print-meta` / `-m`. Et pour n'afficher que les règles qui ne correspondent pas à la règle, utilisez le paramètre `--negate` / `-n`.
 
-Find the other possibilities with `yara --help`
+Trouvez les autres possibilités avec `yara --help`
 
-###Experiment
+### Experiment
 

@@ -17,13 +17,14 @@ rule SectionSample{
 
 
 
-rule HexSample{
+rule HexSample : OUI {
   meta:
   /*
     This is a multi-line comment ...
 */
     author = "Descartes"
     description = "YARA rule check false en hexa"
+    tags = "OUI"
 
   strings:
     $b = {66 61 6C 73 65} //false en hexa
@@ -32,18 +33,3 @@ rule HexSample{
    $b 
 }
 
-
-
-
-rule headmind{
-  meta:
-    author = "Descartes"
-    description = "YARA rule check headmind"
-
-  strings:
-    $b = "Headmind" //false en hexa
-    $c = {25 50 44}
-  
-  condition:
-   $b or $c
-}
