@@ -1,12 +1,10 @@
 # Yara_rules
 
-## Summary
+## Sommaire
 - [Yara\_rules](#yara_rules)
-  - [Summary](#summary)
+  - [Sommaire](#sommaire)
   - [Introduction](#introduction)
     - [Formation](#formation)
-  - [Planning](#planning)
-  - [Installation](#installation)
   - [ToDo](#todo)
   - [Usage](#usage)
   - [Sources](#sources)
@@ -14,47 +12,38 @@
 
 <a name="Introduction"></a>
 ## Introduction
-This Yara project aim to introduce to the basics of Yara and to define a way to exploit those rules on investigation.
+Ce projet Yara a pour but d'introduire les bases de Yara et de définir un moyen d'exploiter ces règles dans le cadre d'une enquête.
 
-We will first update the formation section and pursue with a way to deploy and test the rules on a system.
-After those step we will build a TP formation on a VM to experiment the recognition of some pattern. 
+Nous allons tout d'abord mettre à jour la section formation et poursuivre avec un moyen de déployer et de tester les règles sur un système.
+Après ces étapes, nous construirons une formation TP sur une VM pour expérimenter la reconnaissance d'un motif. 
 
-Finally we will build a folder with many rules, maybe a way to autogenerate them and the template to respect if you want to contributeto the project.
+Enfin, nous créerons un dossier avec de nombreuses règles, peut-être un moyen de les autogénérer et le modèle à respecter si vous souhaitez contribuer au projet.
 
 ### Formation
-To begin you can learn the basic of Yara on init.md 
+Pour commencer, vous pouvez apprendre les bases de Yara sur init.md 
 
-If you prefer, the full documentation of the Language is available on this website https://yara.readthedocs.io/en/v4.3.2/index.html
+Si vous préférez, la documentation complète du langage est disponible sur ce site https://yara.readthedocs.io/en/v4.3.2/index.html
+**Installation Linux**
 
-<a name="Planning"></a>
-## Planning
-
-
-<a name="Installation"></a>
-## Installation
-
-**Linux installation**
-
-- First, update your packet manager by running:
+- Tout d'abord, mettez à jour votre gestionnaire de paquets en exécutant :
   
 ```bash
 sudo apt update -y && sudo apt upgrade -y
 ```
 
-- Installing YARA on your computer
-  <!--  -->
+- Installation de YARA sur votre ordinateur
+
 ```bash
 sudo apt install yara
 ```
 
-After running the command above, you can now access YARA from your command line.
+Après avoir exécuté la commande ci-dessus, vous pouvez maintenant accéder à YARA depuis votre ligne de commande.
 
-**Windows installation**
+**Installation Windows**
 
-- Download this [zip file](https://github.com/VirusTotal/yara/releases/tag/v4.2.0) from the YARAs GitHub page.
-- Unzip the file and run the `yara.exe` executable.
+- Téléchargez ce [fichier zip] (https://github.com/VirusTotal/yara/releases/tag/v4.2.0) depuis la page GitHub de YARA.
+- Décompressez le fichier et lancez l'exécutable `yara.exe` depuis votre invit de commande.
   
-For Mac users, you can use `brew` to install YARA.
 
 <a name="ToDo"></a>
 ## ToDo
