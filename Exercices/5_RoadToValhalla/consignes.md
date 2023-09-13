@@ -3,7 +3,7 @@
 
 [Nextron](https://www.nextron-systems.com/products/) est une entreprise qui propose des outils d'investigation gratuit.
 
-Dans ce court exercice nous allons nous concentrer sur Valhalla une base règle YARA. 
+Dans ce court exercice nous allons nous concentrer sur Valhalla une base de règle YARA. 
 L'objectif est d'extraire de ValhallaAPI l'ensemble des règles YARA gratuites.
 
 Voici les différentes documentation utiles si vous voulez chercher seul:
