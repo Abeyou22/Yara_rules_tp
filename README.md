@@ -9,7 +9,6 @@
   - [Installation](#installation)
   - [ToDo](#todo)
   - [Usage](#usage)
-  - [Conclusion](#conclusion)
   - [Sources](#sources)
 
 
@@ -83,22 +82,13 @@ Idées
 | Level X | Dans une extraction mail, créer une règle YARA capable d'exclure les mails perso et de trouver les mails mentionnant X | init.md | TBD |
 
 - Voir quand on fait les règles python à créer un rapport en .md 
+
 <a name="Usage"></a>
 ## Usage
 
 - Faire un IDS
 - Analyser des fichiers
 
-
-<a name="Conclusion"><a>
-## Conclusion
-Where you have the sample malware file, you might decide to auto-generate YARA using available tools such as `yaraGen`. `yaraGen` is a Python tool developed by Florian Roth that aids in generating YARA rules when provided with the malware sample. 
-
-To install `yarGen` check this [GitHub page](https://github.com/Neo23x0/yarGen) for the instructions. An important point, before using yarGen, make sure you update its database to get accurate rule generation. After we have generated a rule file, you can tweak it to your preference.
-
-Another interesting tool to look at is `Valhalla`. This is a YARA rule repository where you can find a YARA rule for common malware. You can access Valhalla [here](https://valhalla.nextron-systems.com/info/search). 
-
-You can also visit this GitHub [page](https://github.com/DarkenCode/yara-rules) to check out more YARA rules. Python also has a YARA library. We can use YARA from our Python scripts. To import this library simply: `import yara`.
 
 <a name="Sources"></a>
 ## Sources
