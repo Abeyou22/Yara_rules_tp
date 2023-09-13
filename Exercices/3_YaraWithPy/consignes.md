@@ -14,7 +14,7 @@
 
 ## Why using Python ?
 
-Dans cet exercice nous allons passer par l'utilisation de YARA dans Python
+Dans cet exercice, nous allons passer par l'utilisation de YARA dans Python
 Pourquoi passer par python et pas lancer directement le logiciel ?
 
 
@@ -25,13 +25,13 @@ Pourquoi passer par python et pas lancer directement le logiciel ?
 
 ## Installation of YARA
 
-Pour utiliser yara dans python il faut ```python 3``` et la librairie ```yara-python```
+Pour utiliser yara dans python, il faut ```python 3``` et la librairie ```yara-python```
 On lance l'installation avec ```pip```
 
 Essayer ```pip install yara-python``` en cas de refus ```python3 -m pip install yara-python```
 
-Accéder aussi à la documentation ça va vous servir pour avancer dans le tp (https://yara.readthedocs.io/en/stable/yarapython.html)
-Maintenant que tout est  prêt on peut commencer les exercices : 
+Accéder aussi à la documentation, ça va vous servir pour avancer dans le tp (https://yara.readthedocs.io/en/stable/yarapython.html)
+Maintenant que tout est  prêt, on peut commencer les exercices : 
 
 ## Exercice 1 
 
@@ -47,24 +47,25 @@ l'exercice se fait en 3 étapes :
 
 Reprenons notre fichier python
 
-Nous allons enrichir notre règle notre affichage pour mieux comprendre les retours
+Nous allons enrichir notre règle, notre affichage pour mieux comprendre les retours
 
 Construisez une règle qui détecte les png, les jfif, les jpg
 
 Enrichissez la sortie en ajoutant l'affichage de la méta donnée, du string qui a matché
 
 
+
 ## Exercice 3 
 
-Nous savons importer yara dans python, nous savons enrichir maintenant il ne reste plus qu'à généraliser ce comportement avec une arborescence de fichier
+Nous savons importer yara dans python, nous savons enrichir, maintenant, il ne reste plus qu'à généraliser ce comportement avec une arborescence de fichier
 
-Analyser tout les fichiers qui se situe dans le dossier ```myJob```
+Analyser tous les fichiers qui se situent dans le dossier ```myJob```
 
 Utiliser la librairie ```os``` pour pouvoir parcourir des fichiers plus facilement 
 
 Construisez une règle YARA qui réagit si le fichier est corrompu 
 mettre un filtre 
-Donnez la liste des fichiers qui ont été détecté par votre règle
+Donnez la liste des fichiers qui ont été détectés par votre règle
 
 
 ## Exercice 4 
@@ -74,6 +75,6 @@ Notre règle est prête, il ne nous reste plus qu'à la sauvegarder dans la base
 
 ## Exercice 5
 
-Maintenant que nous avons nos règles enrichies qui tournent sur plusieurs fichiers nous allons automatiser la tâche pour pouvoir télécharger les nouvelles règles et lancer une analyse tout les lundi matin
+Maintenant que nous avons nos règles enrichies qui tournent sur plusieurs fichiers, nous allons automatiser la tâche pour pouvoir télécharger les nouvelles règles et lancer une analyse tous les lundis matin
 
 
