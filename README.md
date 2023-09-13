@@ -7,6 +7,7 @@
     - [Formation](#formation)
   - [ToDo](#todo)
   - [Usage](#usage)
+  - [Objectifs Septembre-Octobre](#objectifs-septembre-octobre)
   - [Sources](#sources)
 
 
@@ -53,6 +54,7 @@ Après avoir exécuté la commande ci-dessus, vous pouvez maintenant accéder à
 | Level 1 | Saisir les bases de yara | [init](Exercices/1_ExInit/consignesInit.md)| LR |[Initiation](https://forms.office.com/e/UWZBceHr4m)|
 | Level 2 | Trouver le png : faite une règle qui detecte les png (et autre) | [Exercice 2](Exercices/2_ExFindPng/consignes.md) | TBD | |
 | Level 3 | YARA with python | [Exercice 3](Exercices/5_YaraWithPy/consignes.md)| PK | |
+| Level X | Compléter une formation pour aborder les [wild-cards](#wild-cards), des [case-insensitive-strings](#case-insensitive-strings), des [expression régulière](#regular-expressions), ou des [opérateurs spéciaux](#special-operators) | init.md | CH |
 | Level 4 | Enrichissemment| [Exercice 4](Exercices/6_Enrichment/consignes.md)| PK | |
 | Level 5 | Reach Valhalla | [Exercice 5](Exercices/5_RoadToValhalla/consignes.md) | LR | [Road To Valhalla](https://forms.office.com/e/SDkC7Sk7fn) |
 | Level 6 | Prise en main YarGen| [Exercice 6](Exercices/2_ExFindPng/consignes.md)| OL | |
@@ -78,6 +80,14 @@ Idées
 - Faire un IDS
 - Analyser des fichiers
 
+<a name="Objectifs Septembre-Octobre"></a>
+## Objectifs Septembre-Octobre
+
+  - Finir YarGen
+  - Finir les consgines et passer au format Microsoft Form les exercices
+  - Ajouter d'autre exercices ou trouver d'autre idées à explorer
+  - Faire tester à Pierre et Emma pour connaitre les temps passer sur les exercices quand on ne connait pas forrcémment l'outil
+  
 
 <a name="Sources"></a>
 ## Sources
