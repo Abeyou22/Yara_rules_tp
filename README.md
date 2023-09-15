@@ -73,7 +73,8 @@ Idées
 | Level X | Dans une extraction mail, créer une règle YARA capable d'exclure les mails perso et de trouver les mails mentionnant X | init.md | TBD |
 
 - Voir quand on fait les règles python à créer un rapport en .md 
-
+- Idée à creuser :  mettre en place des règles YARA génériques détectant des micro étapes de malwares et qu'on pourrait lancer pour orienter le type de règles à tester ou pour flaguer un fichier.
+- 
 <a name="Usage"></a>
 ## Usage
 
