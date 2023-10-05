@@ -5,3 +5,22 @@ https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&FormId=py36cQQek
 Initiation
 
 https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&FormId=py36cQQekk6K_OLqaCRvPPF8C101OCxOiaWcBDpndsZUOUVHNzVZSzhQVURaVzNaRVdUR1NWVFhTVS4u
+
+
+Png
+
+https://forms.office.com/Pages/DesignPageV2.aspx?origin=NeoPortalPage&subpage=design&id=py36cQQekk6K_OLqaCRvPPFoeTe93UlElR4sa9pL1qlUQk9VVzc4NEJPU0VNNDI2STQ5S1RaQVJUQi4u
+
+
+ExLvlMalware 
+
+https://forms.office.com/Pages/ResponsePage.aspx?id=py36cQQekk6K_OLqaCRvPPFoeTe93UlElR4sa9pL1qlUMEpNTTRXTEM4MjVOTEI4NFhOUDkzWVBDSi4u
+
+YarGen
+
+https://forms.office.com/Pages/DesignPageV2.aspx?origin=NeoPortalPage&subpage=design&id=py36cQQekk6K_OLqaCRvPPFoeTe93UlElR4sa9pL1qlUNk4xSlc1MEhVVE9PWDYwRkg3WUhFSDhCVi4u
+
+
+Python with Yara
+
+https://forms.office.com/Pages/DesignPageV2.aspx?origin=NeoPortalPage&subpage=design&id=py36cQQekk6K_OLqaCRvPPFoeTe93UlElR4sa9pL1qlUMkZONFZFMjE0QTJMVlVIMFVNVlhNOTFTOS4u
