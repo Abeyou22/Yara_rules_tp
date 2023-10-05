@@ -52,8 +52,8 @@ Après avoir exécuté la commande ci-dessus, vous pouvez maintenant accéder à
 | Level         | Objectif | Page |  Charge | Questionnaire |
 |--------------|-----------|-----------|-----------|-----------|
 | Level 1 | Saisir les bases de yara | [init](Exercices/1_ExInit/consignesInit.md)| LR |[Initiation](https://forms.office.com/e/UWZBceHr4m)|
-| Level 2 | Trouver le png : faite une règle qui detecte les png (et autre) | [Exercice 2](Exercices/2_ExFindPng/consignes.md) | TBD | |
-| Level 3 | YARA with python | [Exercice 3](Exercices/5_YaraWithPy/consignes.md)| PK | |
+| Level 2 | Trouver le png : faite une règle qui detecte les png (et autre) | [Exercice 2](Exercices/2_ExFindPng/consignes.md) | TBD | [Trouve le PNG](https://forms.office.com/e/4PEDdycPVZ) |
+| Level 3 | YARA with python | [Exercice 3](Exercices/5_YaraWithPy/consignes.md)| PK | [Python avec Yara](https://forms.office.com/e/urw32a2Cf3) |
 | Level X | Compléter une formation pour aborder les [wild-cards](#wild-cards), des [case-insensitive-strings](#case-insensitive-strings), des [expression régulière](#regular-expressions), ou des [opérateurs spéciaux](#special-operators) | init.md | CH |
 | Level 4 | Enrichissemment| [Exercice 4](Exercices/6_Enrichment/consignes.md)| PK | |
 | Level 5 | Reach Valhalla | [Exercice 5](Exercices/5_RoadToValhalla/consignes.md) | LR | [Road To Valhalla](https://forms.office.com/e/SDkC7Sk7fn) |
