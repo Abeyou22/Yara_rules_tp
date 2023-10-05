@@ -57,10 +57,10 @@ Après avoir exécuté la commande ci-dessus, vous pouvez maintenant accéder à
 | Level X | Compléter une formation pour aborder les [wild-cards](#wild-cards), des [case-insensitive-strings](#case-insensitive-strings), des [expression régulière](#regular-expressions), ou des [opérateurs spéciaux](#special-operators) | init.md | CH |
 | Level 4 | Enrichissemment| [Exercice 4](Exercices/6_Enrichment/consignes.md)| PK | |
 | Level 5 | Reach Valhalla | [Exercice 5](Exercices/5_RoadToValhalla/consignes.md) | LR | [Road To Valhalla](https://forms.office.com/e/SDkC7Sk7fn) |
-| Level 6 | Prise en main YarGen| [Exercice 6](Exercices/2_ExFindPng/consignes.md)| OL | |
+| Level 6 | Prise en main YarGen| [Exercice 6](Exercices/2_ExFindPng/consignes.md)| OL | [YarGen](https://forms.office.com/e/6ZEevy9Dc2) |
 | Level 7 | Faire un python qui tourne en boucle pour faire IDS / https://yaids.io/ | [Exercice 7](Exercices/) | PK | |
 | Level 8 | Bat Malware| [Exercice 8](Exercices/8_BatMalware/consignes.md) | CH | |
-| Level 9 | ExLevel Malware | [Exercice 9](Exercices/9_ExLvlMalware/consignes.md) | OL | |
+| Level 9 | ExLevel Malware | [Exercice 9](Exercices/9_ExLvlMalware/consignes.md) | OL | [Where Are You ?](https://forms.office.com/e/rfk591jjVD) |
 
 
 Idées
