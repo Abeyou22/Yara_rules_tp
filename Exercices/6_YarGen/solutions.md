@@ -1,5 +1,5 @@
 ```sh
-└─kali㉿kali)-[~/Yara_rules_tp/Exercices/yarGen]
+└─kali㉿kali-[~/Yara_rules_tp/Exercices/yarGen]
 └─$ python3 yarGen.py -m ../YarGen/MaybeMalicious/ -o test.yara 
 ------------------------------------------------------------------------
                    _____            
