@@ -24,3 +24,6 @@ https://forms.office.com/Pages/DesignPageV2.aspx?origin=NeoPortalPage&subpage=de
 Python with Yara
 
 https://forms.office.com/Pages/DesignPageV2.aspx?origin=NeoPortalPage&subpage=design&id=py36cQQekk6K_OLqaCRvPPFoeTe93UlElR4sa9pL1qlUMkZONFZFMjE0QTJMVlVIMFVNVlhNOTFTOS4u
+
+BatMalware
+https://forms.office.com/Pages/DesignPageV2.aspx?origin=NeoPortalPage&subpage=design&id=py36cQQekk6K_OLqaCRvPB7rUBP71YxCpJuz8eD8rQVUOUwwWTNYOUVBNDBYVUw5U1dTOTJaS1pTRC4u
