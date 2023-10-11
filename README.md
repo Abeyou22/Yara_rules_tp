@@ -59,7 +59,7 @@ Après avoir exécuté la commande ci-dessus, vous pouvez maintenant accéder à
 | Level 5 | Reach Valhalla | [Exercice 5](Exercices/5_RoadToValhalla/consignes.md) | LR | [Road To Valhalla](https://forms.office.com/e/SDkC7Sk7fn) |
 | Level 6 | Prise en main YarGen| [Exercice 6](Exercices/2_ExFindPng/consignes.md)| OL | [YarGen](https://forms.office.com/e/6ZEevy9Dc2) |
 | Level 7 | Faire un python qui tourne en boucle pour faire IDS / https://yaids.io/ | [Exercice 7](Exercices/) | PK | |
-| Level 8 | Bat Malware| [Exercice 8](Exercices/8_BatMalware/consignes.md) | CH | [Bat Malware](https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&FormId=py36cQQekk6K_OLqaCRvPB7rUBP71YxCpJuz8eD8rQVUOUwwWTNYOUVBNDBYVUw5U1dTOTJaS1pTRC4u&Token=7d7e578bb7e44e63b5753ad3a440b685) |
+| Level 8 | Bat Malware| [Exercice 8](Exercices/8_BatMalware/consignes.md) | CH | [Bat Malware](https://forms.office.com/e/7QgVwGAWw1) |
 | Level 9 | ExLevel Malware | [Exercice 9](Exercices/9_ExLvlMalware/consignes.md) | OL | [Where Are You ?](https://forms.office.com/e/rfk591jjVD) |
 
 
