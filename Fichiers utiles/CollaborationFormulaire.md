@@ -26,4 +26,4 @@ Python with Yara
 https://forms.office.com/Pages/DesignPageV2.aspx?origin=NeoPortalPage&subpage=design&id=py36cQQekk6K_OLqaCRvPPFoeTe93UlElR4sa9pL1qlUMkZONFZFMjE0QTJMVlVIMFVNVlhNOTFTOS4u
 
 BatMalware
-https://forms.office.com/Pages/DesignPageV2.aspx?prevorigin=shell&origin=NeoPortalPage&subpage=design&id=py36cQQekk6K_OLqaCRvPB7rUBP71YxCpJuz8eD8rQVUNkZDTDZOV0ZaOUU5MEFGSFdVMEI2WVdUNS4u
+https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&FormId=py36cQQekk6K_OLqaCRvPB7rUBP71YxCpJuz8eD8rQVUNkZDTDZOV0ZaOUU5MEFGSFdVMEI2WVdUNS4u&Token=67d8c07ac021469ca918e5fa1ce9db75
