@@ -102,3 +102,5 @@ Idées
 | Formation YARA Andreas | https://www.first.org/resources/papers/conference2014/first_2014_-_schuster-_andreas_-_yara_basic_and_advanced_20140619.pdf   | 
 | Formation velocyraptor| https://docs.velociraptor.app/docs/forensic/searching/    | 
 | Github rules YARA | https://github.com/section-engineering-education/engineering-education/tree/master/content/articles/getting-started-with-yara-for-malware-analysis   | 
+| YARA en IDS | [YAIDS](https://yaids.io/) |
+| Règle YARA solarwind | [YARA sunburst countermeasures](https://github.com/mandiant/sunburst_countermeasures/blob/main/all-yara.yar) |
