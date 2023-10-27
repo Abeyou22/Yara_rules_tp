@@ -1,0 +1,80 @@
+# CR du Jeudi 20 Juillet 2023
+## Préparation du point d'avancement du projet
+
+- [CR du Jeudi 20 Juillet 2023](#cr-du-jeudi-20-juillet-2023)
+  - [Préparation du point d'avancement du projet](#préparation-du-point-davancement-du-projet)
+  - [Formation](#formation)
+    - [Exercices](#exercices)
+    - [Tracking](#tracking)
+  - [Pistes](#pistes)
+  - [Exploitation](#exploitation)
+  - [Questions](#questions)
+  - [Notes](#notes)
+
+<a name="formation"></a>
+## Formation
+
+### Exercices
+Création de mini niveau, de plus en plus compliqué pour développer ses skills YARA. Création d'un tableau dans le README.md pour lister les exercices.
+
+Chaque exercice doit respecté la mise en forme templateDossierExercice (On le duplique et on se l'approprie).
+Exercices/templateDossierExercice/ 
+- Consigne.md
+- Solution.md
+- Fichiers/
+  - [Ensemble des fichiers nécessaire à l'exercice]
+- solutionLvl0.yar
+
+### Tracking
+
+Il faut trouver comment accompagner lors des formations l'utilisateur
+- Création d'un site où on rentre un flag  (type rootme)
+- Chatbot ?
+- Github Pages
+
+
+<a name="Pistes"></a>
+## Pistes
+- Trouver comment appliquer les règles YARA au pdf
+- Trouver comment auto générer kdes règles YARA (YAraGen)
+- Trouver comment contacter l'API Valhalla (Base de règle YAra) pour les malware commun
+- Décrire comment push les règles dans le MISP et créer une base de règle YARA dans le MISP
+- regarder si on peut detecter le parttern d'un fichier (charte graphique headmind ?) pour identifier des fichiers pro dans une base de donnée/arborescence perso
+- Voir avec Alice et Jean-Léo pour utiliser la collecte de mail pour créer une base de mail pour un exercice
+    - Trouver un phishing
+    - Exclure les mails perso
+    - Trouver un leak d'info
+
+
+
+<a name="exploitation"></a>
+## Exploitation
+
+A terme il va falloir pouvoir utiliser YARA dans un contexte d'investigation. 
+
+| Objectifs       | Charge | 
+|--------------|-----------|
+| Mettre en place un fichier template de création de règle (avec des règles à décommenter | TBD |
+| Procédure pour push une règle dans le MISP |  TBD |
+| Procédure pour lancer les règles depuis le MISP ? | TBD |
+| Procédure pour pull l'API Valhalla et exploiter les règles | TBD |
+
+
+<a name="questions"></a>
+## Questions
+
+- Comment suivre et accompagner les gens pendant la formation
+  - -> Faire un Microsoft Form : avec flag à donner ?
+  - Check github pages avec tous les form des questions ?
+  - A voir vers la fin 
+- Comment déployer la VM, est-ce que ce qu'a fait Pierre est déployable directement sur Azure ?
+- Comment envisage-t-on d'utiliser YARA ?
+
+## Notes 
+
+| Information       | Lien | 
+|--------------|-----------|
+| Liste des signatures de fichiers | [File signature](https://www.garykessler.net/library/file_sigs.html) |
+| Logiciels linux hex des fichiers |  Ghex et Bless Hex Editor |
+| Règle YARA solarwind | [YARA sunburst countermeasures](https://github.com/mandiant/sunburst_countermeasures/blob/main/all-yara.yar) |
+| YARA en IDS | [YAIDS](https://yaids.io/) |
