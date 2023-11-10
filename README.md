@@ -42,9 +42,12 @@ Après avoir exécuté la commande ci-dessus, vous pouvez maintenant accéder à
 
 **Installation Windows**
 
-- Téléchargez ce [fichier zip] (https://github.com/VirusTotal/yara/releases/tag/v4.2.0) depuis la page GitHub de YARA.
+- Téléchargez ce [fichier zip](https://github.com/VirusTotal/yara/releases/tag/v4.2.0) depuis la page GitHub de YARA.
 - Décompressez le fichier et lancez l'exécutable `yara.exe` depuis votre invit de commande.
-  
+
+**Version précise**
+
+Si vous souhaitez installer une version précise, récupérer la version sur ce [site](https://github.com/VirusTotal/yara/releases) et suivez la [procédure](changementVersion.md)
 
 <a name="ToDo"></a>
 ## ToDo
@@ -73,7 +76,8 @@ Idées
 | Level X | Dans une extraction mail, créer une règle YARA capable d'exclure les mails perso et de trouver les mails mentionnant X | init.md | TBD |
 
 - Voir quand on fait les règles python à créer un rapport en .md 
-
+- Idée à creuser :  mettre en place des règles YARA génériques détectant des micro étapes de malwares et qu'on pourrait lancer pour orienter le type de règles à tester ou pour flaguer un fichier.
+- 
 <a name="Usage"></a>
 ## Usage
 
@@ -101,3 +105,5 @@ Idées
 | Formation YARA Andreas | https://www.first.org/resources/papers/conference2014/first_2014_-_schuster-_andreas_-_yara_basic_and_advanced_20140619.pdf   | 
 | Formation velocyraptor| https://docs.velociraptor.app/docs/forensic/searching/    | 
 | Github rules YARA | https://github.com/section-engineering-education/engineering-education/tree/master/content/articles/getting-started-with-yara-for-malware-analysis   | 
+| YARA en IDS | [YAIDS](https://yaids.io/) |
+| Règle YARA solarwind | [YARA sunburst countermeasures](https://github.com/mandiant/sunburst_countermeasures/blob/main/all-yara.yar) |
