@@ -34,7 +34,8 @@ rule WildcarExample
 
 ```
 
-Exercice d'utilisation des wilds card sur pour la recehrche de fichier avec une structure similaire
+**Ecrivez une règle YARA qui detecte les 3 fichiers text1, text2 et text3 grâce aux wildcards**
+**Ecrivez une règle YARA qui detecte les fichiers text1 et text2 grâce aux wildcards**
 
 #### not operator
 <span style="font-size:20px;color:red">
@@ -55,7 +56,10 @@ rule NotExample
 ```
 Ici $hex_string est détecté si le byte n'est pas 00 et $hex_string2 si le second le chiffre de l'hexa n'est pas 0.
 
-Exercice d'utilisation du not operator
+**Outre leur noms les fichiers text1, text2 et text3 on des points communs lesquels ?**
+**Ecrivez une règle YARA qui detecte les fichiers similaire a text1 mais qui n'est pas text1 grâce aux not operator**
+**Ecrivez une règle YARA qui detecte les fichiers similaire a text1 mais qui n'est pas text1 grâce aux not operator**
+**Ecrivez une règle YARA qui exclue les fichiers strictement similaire a text1 grâce aux not operator**
 
 #### Jump
 
