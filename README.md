@@ -1,4 +1,8 @@
 # Yara_rules
+## Cheatsheet
+
+![Alt text](cheatsheet.png "Yara CheatSheet thx TC")
+
 
 ## Sommaire
 - [Yara\_rules](#yara_rules)
