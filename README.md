@@ -1,8 +1,4 @@
 # Yara_rules
-## Cheatsheet
-
-![Alt text](cheatsheet.png "Yara CheatSheet thx TC")
-
 
 ## Sommaire
 - [Yara\_rules](#yara_rules)
@@ -95,7 +91,12 @@ Idées
   - Finir les consgines et passer au format Microsoft Form les exercices
   - Ajouter d'autre exercices ou trouver d'autre idées à explorer
   - Faire tester à Pierre et Emma pour connaitre les temps passé sur les exercices quand on ne connait pas forcémment l'outil
-  
+
+<a name="Cheatsheet"></a>
+## Cheatsheet
+
+![Alt text](cheatsheet.png "Yara CheatSheet thx TC")
+
 
 <a name="Sources"></a>
 ## Sources
