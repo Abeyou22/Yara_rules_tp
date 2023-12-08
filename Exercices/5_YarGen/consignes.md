@@ -34,6 +34,13 @@ python3 yarGen.py -h
 ```
 Normalement vous devriez avoir toute les infos nécessaire pour apprendre à utiliser l'outil.
 
+
+Comme vous le savez sûrement YarGen se base sur une base de données avec de multiples règles Yara. Pour mettre à jour cette base de donnée et ainsi utiliser ces règles il suffit de taper cette commande :
+
+```sh
+python3 yarGen.py --update
+```
+
 #Exercice
 
 Vous trouverez plusieurs fichiers à analyser dans le répertoire MaybeMalicious, à l'aide de l'outil YarGen vous allez devoir génerer des règles Yara afin de détecter les fichiers présents dans le répertoire.Essayez de comprendre les règles générées par l'outil. Bon courage !

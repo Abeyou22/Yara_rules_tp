@@ -6,8 +6,9 @@ Présentation des wild-cards, des case-insensitive-strings, des expression régu
 ### Strings
 
 Il y a trois type de string dans YARA :
-- les strings hexadecimal 
-- les strings de texte
+- ASCII strings
+- Wide Strings
+- Hexa Strings 
 
 #### Strings Hexadécimal
 

@@ -1,11 +1,14 @@
-# Consignes level 2
-## Détection d'un fihier PNG
+# Trouve le PNG
+## Détection d'un fichier PNG
 
-Une technique de dissimulation consiste à modifier l'extension dans le nom du fichier.
-De cette façon on peut pousser la cible à lancer un éxécutable qui croit ouvrir un pdf.
+Une technique de dissimulation consiste à modifier l'extension dans le nom du fichier. De cette façon on peut pousser la cible à lancer un exécutable qui croit ouvrir un PDF.
 
-Dans cet exercice vous trouverez 2 fichiers .png dans le dossier cependant un seul en est réellement un.
-- **Ecrivez une règle YARA qui detetcte les fichiers png**
-- **Quel est l'extension du second fichier ?**
-- **Ecrivez une règle YARA qui detecte cette extension**
+Dans cet exercice vous trouverez 2 fichiers .png dans le répertoire 'fichiers', cependant un seul en est réellement un.
+
+Consignes : 
+
+- L'un des deux fichiers n'est pas un png lequel, et quel est sa véritable extension ?
+- Créer 2 règles Yara, une pour chaque extension (PNG et l'autre extension)
+
+
 

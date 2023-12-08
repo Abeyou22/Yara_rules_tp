@@ -29,9 +29,7 @@ rule SectionSample{
    author = “Descartes”
    description = “Simple YARA rule”
   strings:
-    $a = {6A 40 68 00 30 00 00 6A 14 8D 91}
-    $b = {8D 4D B0 2B C1 83 C0 27 99 6A 4E 59 F7 F9}
-    $c = "UVODFRYSIHLNWPEJXQZAKCBGMT"
+    $a = "UVODFRYSIHLNWPEJXQZAKCBGMT"
   
   condition:
    any of them //checks whether a file has any of the above rules //$a or $b or $c
@@ -83,6 +81,7 @@ Dans cette section, vous pouvez inclure le nom de l'auteur, la date de création
 La section `strings` contient les valeurs que nous voulons rechercher dans les fichiers. Cette section peut contenir du texte, de l'hexadécimal ou des expressions régulières. 
 `$[nomVariable]` sont les variables dans lesquelles nous allons stocker nos chaînes de caractères. Ici, nous avons 3 variables : $a $b $c
 
+
 #### Condition
 
 ```c
@@ -107,7 +106,7 @@ Les règles YARA sont sauvegardées dans des fichiers portant l'extension `. yar
 
 ### Exécution des règles de YARA
 
-#### A vous de jouer
+#### Premier Pas
 - Ouvrez l'éditeur de code de votre choix 
 - Copiez notre exemple de règle YARA et enregistrez le fichier sous le nom `sample.yar` ou tout autre nom. 
 - Créez un autre fichier texte et ajoutez-y du texte.
@@ -130,9 +129,10 @@ Pour exécuter notre règle YARA, nous utiliserons le mot-clé `yara` pour accé
 └─$ yara sample.yar text.txt
 SectionSample test.txt
 ```
-Parfois, nous pouvons vouloir vérifier l'ensemble de notre système de fichiers, et nous pouvons donc utiliser `. ` à la place du fichier que nous voulons tester.
 
+#### Plusieurs fichiers
 
+Parfois, nous pouvons vouloir vérifier l'ensemble de notre système de fichiers, et nous pouvons donc utiliser `.` à la place du fichier que nous voulons tester.
 Vérifier un fichier, c'est-à-dire le reste du dossier.
 
 
@@ -145,6 +145,7 @@ HexSample ./sample.yar
 headmind ./sample.yar
 SectionSample ./text.txt
 ```
+
 Notez que sample.yar respecte toutes ses propres règles comme prévu.
 
 Si vous voulez que la règle teste récursivement tous les dossiers, utilisez le paramètre `-r `/ `--recursive`. 
@@ -153,5 +154,26 @@ Si vous voulez imprimer les méta-données de la règle, utilisez le paramètre 
 
 Trouvez les autres possibilités avec `yara --help`
 
-### Experiment
+
+### TAG
+
+Rajouter une règle Yara dans votre fichier sample.yar et ajoutez lui un TAG.
+
+Pour ajouter un TAG :
+
+```c
+  rule NomRule : TAG1 TAG2 {
+    ...
+    ...
+    ...
+  }
+```
+
+### Finale
+
+Quelles commandes déclenche cette règle ? 
+Modifiez votre fichier texte de test en conséquence pour que :
+
+ 1- les deux règles sans les tags détectent le fichier
+ 2- seule votre nouvelle règle sonne positive avec le tag
 

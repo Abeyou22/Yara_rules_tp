@@ -12,6 +12,8 @@ matches = rules.match(data=content)
 if matches:
     print("Le fichier n'est pas un .png !")
     for match in matches:
-        print(match)
+        print("String Matché : {}".format(match['string']))
+        print("Métadonnées : {}".format(match['meta']))
 else:
-    print("Rien à signaler le fichier est bien un PNG.")
+    print("Rien à signaler, le fichier est bien un PNG.")
+
