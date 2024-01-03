@@ -19,7 +19,7 @@ Il y a quatres type de construction possible avec les strings hexadécimal qui a
 - jumps
 - alternatives
 
-#### Wild-Card
+##### Wild-Card
 
 Une wild card, indiqué par l'opérateur **?** dans le code hexa permet d'indiquer que tous les caractères peuvent matcher à cet endroit. 
 
@@ -38,9 +38,9 @@ rule WildcarExample
 **Ecrivez une règle YARA qui detecte les 3 fichiers text1, text2 et text3 grâce aux wildcards**
 **Ecrivez une règle YARA qui detecte les fichiers text1 et text2 grâce aux wildcards**
 
-#### not operator
+##### not operator
 <span style="font-size:20px;color:red">
-SEULEMENT à partir de la 4.3
+SEULEMENT à partir de la version 4.3
 </span>
 
 Le not operator représenté par ~ permet d'indiquer qu'on cherche tous sauf ce caractère. 
@@ -62,9 +62,11 @@ Ici $hex_string est détecté si le byte n'est pas 00 et $hex_string2 si le seco
 **Ecrivez une règle YARA qui detecte les fichiers similaire a text1 mais qui n'est pas text1 grâce aux not operator**
 **Ecrivez une règle YARA qui exclue les fichiers strictement similaire a text1 grâce aux not operator**
 
-#### Jump
+##### Jump
 
-Comme les wildcard mais permet de passer des paquets variable de byte
+Comme les wildcard, mais permet de passer un paquets variable de byte entre deux bloc de byte.
+
+Ici on passe 4 à 6 byte
 
 ```
 rule JumpExample
@@ -94,6 +96,7 @@ rule JumpExample2
 }
 ```
 //METTRE DES EXERCICES
+##### Conditions
 
 On peut également mettre des conditions 
 
@@ -101,14 +104,15 @@ On peut également mettre des conditions
 rule AlternativeExample
 {
     strings:
-        $hex_string = { F4 23 ( 62 B4 | 56 ) 45 }
+        $hex_string = { 69 6E 0A ( 0A | 20 20 ) 4C 6F }
     
-    codnition:
+    condition:
         $hex_string
 }
 ```
-(detecte ce qui contient F42362B445 or F4235645)
-Et y introduire des wildcards
+(detecte ce qui contient 696E0A0A4C6F or 696E0A20204C6F)
+
+On peut introduire des wildcard ou rajouter des conditions alternatives, il n'y a pas de limite sur la taille des séquences alternatives ou un nombre maximum de condition.
 
 ```
 rule AlternativeExample2
@@ -116,7 +120,38 @@ rule AlternativeExample2
     strings:
         $hex_string = { F4 23 ( 62 B4 | 56 | 45 ?? 67 ) 45 }
     
-    codnition:
+    condition:
         $hex_string
 }
 ```
+
+#### Strings Text
+
+Plutôt que de rechercher des paternes sur l'écritures hexa décimale des fichiers, nous avons vu qu'il était possible de rechercher directement du texte.
+
+Il faut noté que les textes contienent des caractères spéciaux de mise en page ou de ponctuation:
+
+| Caractère         | nom | 
+|--------------|-----------|
+| \\"| Double quote |
+| &#92; &#92;| Backslash | 
+| \r | retour à la ligne| 
+| \t | Tab | 
+| \n | Nouvelle ligne | 
+| \xdd | Un byte en hexa | 
+
+##### Casse
+
+Les strings Yara sont sensible à la casse par default, c'est à dire qu'il différencie les lettres capitales et minuscule.
+
+rule noCase
+{
+    strings:
+        $hex_string = "MorBi" nocase
+    
+    condition:
+        $hex_string
+}
+
+ici la règle toutes les écritures posisble de Morbi, morbi, MORBI ....
+

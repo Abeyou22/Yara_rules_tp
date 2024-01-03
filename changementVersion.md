@@ -2,6 +2,7 @@ Allez dans le dossier où vous avez télécharger le fichier
 ```
 tar -zxf yara-X.X.X.tar.gz
 cd yara-X.X.X
+sudo apt-get install automake libtool make gcc pkg-config
 ./bootstrap.sh
 ./configure --enable-cuckoo --enable-magic --enable-dotnet
 make
@@ -24,15 +25,10 @@ Chezchez la librairire manquante : `sudo find / -name libyara.so.10`
 
 Si vous obtenez un chemin d'accès du style : `/usr/local/lib/libyara.so.10`, ajoutez la au fichier "/etc/ld.so.conf" grâce à la commande :
 ```
-sudo echo "/usr/local/lib/libyara.so.10" >> /etc/ld.so.conf
+sudo sh -c 'echo "/usr/local/lib" >> /etc/ld.so.conf'
+sudo ldconfig
 ```
-Si vous obtenez "Permission denied"
 
-- `sudo nano /ect/ld.so.conf`
-- ajoutez le chemin /usr/local/lib/libyara.so.10
-- faite CTRL + X
-- faite Y pour accepter
-- ECHAP si vous n'êtes pas encore sortie
 
 Ensuite refaite `yara -v`, si vous n'avez pas encore la bonne version, recommencez la procédure depuis le début.
 

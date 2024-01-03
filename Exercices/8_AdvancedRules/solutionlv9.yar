@@ -40,3 +40,30 @@ rule NotExample2
     condition:
         $hex_string
 }
+
+rule AlternativeExample
+{
+    strings:
+        $hex_string = { 69 6E 0A ( 0A | 20 20 ) 4C 6F }
+    
+    condition:
+        $hex_string
+}
+
+rule case
+{
+    strings:
+        $hex_string = "MorBi" 
+    
+    condition:
+        $hex_string
+}
+
+rule noCase
+{
+    strings:
+        $hex_string = "MorBi" nocase
+    
+    condition:
+        $hex_string
+}

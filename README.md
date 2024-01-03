@@ -97,7 +97,9 @@ Idées
 
 ![Alt text](cheatsheet.png "Yara CheatSheet thx TC")
 
-
+<a name="Outils"></a>
+- Vscode - permet la manipulation de code
+- GHex - Affiche fichier en hexa
 <a name="Sources"></a>
 ## Sources
 | Sujet         | Lien |
