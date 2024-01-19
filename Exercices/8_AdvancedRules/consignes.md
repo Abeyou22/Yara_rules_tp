@@ -96,7 +96,8 @@ rule JumpExample2
             $hex_string or $hex_string2 or $hex_string3
 }
 ```
-//METTRE DES EXERCICES
+**Ecrivez une règle qui détectent les fichiers contenants au moins 7 fois le mots zymja ? 20 fois ?**
+
 ##### Conditions
 
 On peut également mettre des conditions 
@@ -125,6 +126,7 @@ rule AlternativeExample2
         $hex_string
 }
 ```
+**Ecrivez une règles qui contient "hoxfi" ou "joxmi" en 4ème mots. Indice les mots font en moyenne 4/5 caractères**
 
 #### Strings Text
 Plutôt que de rechercher des paternes sur l'écritures hexa décimale des fichiers, nous avons vu qu'il était possible de rechercher directement du texte.

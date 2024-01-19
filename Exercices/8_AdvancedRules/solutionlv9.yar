@@ -50,6 +50,24 @@ rule AlternativeExample
         $hex_string
 }
 
+rule AlternativeExample2
+{
+    strings:
+        $hex_string = { 69 6E 0A ( 0A | 20 20 ) 4C 6F }
+    
+    condition:
+        $hex_string
+}
+
+rule AlternativeExample3
+{
+    strings:
+        $hex_string = { 69 6E 0A ( 0A | 20 20 ) 4C 6F }
+    
+    condition:
+        $hex_string
+}
+
 
 rule stringText{
 
