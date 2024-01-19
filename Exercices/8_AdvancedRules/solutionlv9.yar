@@ -50,6 +50,25 @@ rule AlternativeExample
         $hex_string
 }
 
+
+rule stringText{
+
+    strings:
+        $hex_string = "Je te l'avais dit :\r" 
+   
+    condition:
+        $hex_string
+}
+
+rule stringText2{
+
+    strings:
+        $hex_string = "\t" 
+   
+    condition:
+        $hex_string
+}
+
 rule case
 {
     strings:
@@ -62,7 +81,7 @@ rule case
 rule noCase
 {
     strings:
-        $hex_string = "MorBi" nocase
+        $hex_string = "Non uRna At" nocase
     
     condition:
         $hex_string
