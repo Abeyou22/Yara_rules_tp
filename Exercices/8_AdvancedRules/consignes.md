@@ -133,25 +133,14 @@ Plutôt que de rechercher des paternes sur l'écritures hexa décimale des fichi
 
 Il faut noté que les textes contiennent des caractères spéciaux de mise en page ou de ponctuation:
 
- \\" : Double quote 
-&#92; &#92; : Backslash 
-\r : retour à la ligne
-\t  : Tab 
-\n : Nouvelle ligne 
-\xdd : Un byte en hexa 
-
-```
-rule stringText{
-
-    strings:
-        $hex_string = "Je te l'avais dit :\r"
-   
-    condition:
-        $hex_string
-}
-```
-
-**Ecrivez une règle YARA, permettant de détecter un texte contenant des caractères de tabulation**
+| Caractère         | nom | 
+|--------------|-----------|
+| \\"| Double quote |
+| &#92; &#92;| Backslash | 
+| \r | retour à la ligne| 
+| \t | Tab | 
+| \n | Nouvelle ligne | 
+| \xdd | Un byte en hexa | 
 
 ##### Casse
 
