@@ -41,28 +41,36 @@ rule NotExample2
         $hex_string
 }
 
-rule AlternativeExample
+rule JumpExample1
 {
-    strings:
-        $hex_string = { 69 6E 0A ( 0A | 20 20 ) 4C 6F }
-    
-    condition:
-        $hex_string
+        strings:
+            $hex_string = { 7A 79 6D 6A 61 }
+
+        condition:
+            $hex_string
 }
 
-rule AlternativeExample2
+rule JumpExample2
 {
-    strings:
-        $hex_string = { 69 6E 0A ( 0A | 20 20 ) 4C 6F }
-    
-    condition:
-        $hex_string
+        strings:
+            $hex_string = { 7A 79 6D 6A 61 [-] 7A 79 6D 6A 61 [-] 7A 79 6D 6A 61 [-] 7A 79 6D 6A 61 [-] 7A 79 6D 6A 61 [-] 7A 79 6D 6A 61 [-] 7A 79 6D 6A 61}
+
+        condition:
+            $hex_string
+}
+rule JumpExample3
+{
+        strings:
+            $hex_string = { 7A 79 6D 6A 61 [-] 7A 79 6D 6A 61 [-] 7A 79 6D 6A 61 [-] 7A 79 6D 6A 61 [-] 7A 79 6D 6A 61 [-] 7A 79 6D 6A 61 [-] 7A 79 6D 6A 61 [-] 7A 79 6D 6A 61 [-] 7A 79 6D 6A 61 [-] 7A 79 6D 6A 61 [-] 7A 79 6D 6A 61 [-] 7A 79 6D 6A 61 [-] 7A 79 6D 6A 61 [-] 7A 79 6D 6A 61 [-] 7A 79 6D 6A 61 [-] 7A 79 6D 6A 61 [-] 7A 79 6D 6A 61 [-] 7A 79 6D 6A 61 [-] 7A 79 6D 6A 61 [-] 7A 79 6D 6A 61}
+
+        condition:
+            $hex_string
 }
 
-rule AlternativeExample3
+rule AlternativeExample1
 {
     strings:
-        $hex_string = { 69 6E 0A ( 0A | 20 20 ) 4C 6F }
+        $hex_string = {  20 [-] 20 [-] 20 [-] 20 ( 6A 6F 6B 6D 69 | 68 6F 78 66 69 )}
     
     condition:
         $hex_string

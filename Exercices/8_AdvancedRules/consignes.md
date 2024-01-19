@@ -120,7 +120,7 @@ On peut introduire des wildcard ou rajouter des conditions alternatives, il n'y 
 rule AlternativeExample2
 {
     strings:
-        $hex_string = { F4 23 ( 62 B4 | 56 | 45 ?? 67 ) 45 }
+        $hex_string = { F4 23 ( 6A  | 56 | 45 ?? 67 ) 45 }
     
     condition:
         $hex_string
