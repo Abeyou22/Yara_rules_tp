@@ -144,8 +144,8 @@ Il faut noté que les textes contienent des caractères spéciaux de mise en pag
 
 Les strings Yara sont sensible à la casse par default, c'est à dire qu'il différencie les lettres capitales et minuscule.
 
-rule noCase
-{
+rule noCase{
+
     strings:
         $hex_string = "MorBi" nocase
     
@@ -155,3 +155,19 @@ rule noCase
 
 ici la règle toutes les écritures posisble de Morbi, morbi, MORBI ....
 
+#### XOR
+
+Il est possible de detecter un strings qui a été obfusqué avec une opération xor bit à bit en ajoutant `xor` à la suite de la string recherché 
+
+rule XorExample{
+    strings:
+        $xor_string = "Rvbmg#of#`kbw#pf#obuf/#jo#ub#sofvuljq" xor
+    
+    condition:
+        $xor_string
+}
+
+Ainsi la règle ci-dessus permet de detecter tous les encodage de "La règle XorExample ci-dessous, permet de 
+" 
+
+**textXor.txt est l'un des fichier suivant text1, text2 ou text3, ayant subit une opération xor. Ecrivez une regle qui vous permet d'identifier lequel.**

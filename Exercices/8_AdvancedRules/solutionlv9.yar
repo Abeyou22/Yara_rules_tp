@@ -67,3 +67,21 @@ rule noCase
     condition:
         $hex_string
 }
+
+rule XorExample{
+    strings:
+        $xor_string = "Rvbmg#of#`kbw#pf#obuf/#jo#ub#sofvuljq" xor
+    
+    condition:
+        $xor_string
+
+}
+
+rule XorExample1{
+    strings:
+        $xor_string = "id placerat leo hendrerit ac." xor
+    
+    condition:
+        $xor_string
+
+}
