@@ -1,7 +1,9 @@
 # Consignes level 10
 ## Apprentissage de règles ++
 
-Présentation des wild-cards, des case-insensitive-strings, des expression régulière, ou des opérateurs spéciaux et bien d'autres fonctionnalités.
+Apprentissage de règles YARA
+Présentation des wild-cards, des case-insensitive-stringset de quelques opérateurs spéciaux
+https://forms.office.com/e/Cc0YEMCchg
 
 ### Strings
 
@@ -58,7 +60,6 @@ rule NotExample
 Ici $hex_string est détecté si le byte n'est pas 00 et $hex_string2 si le second le chiffre de l'hexa n'est pas 0.
 
 **Outre leur noms les fichiers text1, text2 et text3 on des points communs lesquels ?**
-**Ecrivez une règle YARA qui detecte les fichiers similaire a text1 mais qui n'est pas text1 grâce aux not operator**
 **Ecrivez une règle YARA qui detecte les fichiers similaire a text1 mais qui n'est pas text1 grâce aux not operator**
 **Ecrivez une règle YARA qui exclue les fichiers strictement similaire a text1 grâce aux not operator**
 
@@ -126,19 +127,29 @@ rule AlternativeExample2
 ```
 
 #### Strings Text
-
 Plutôt que de rechercher des paternes sur l'écritures hexa décimale des fichiers, nous avons vu qu'il était possible de rechercher directement du texte.
 
-Il faut noté que les textes contienent des caractères spéciaux de mise en page ou de ponctuation:
+Il faut noté que les textes contiennent des caractères spéciaux de mise en page ou de ponctuation:
 
-| Caractère         | nom | 
-|--------------|-----------|
-| \\"| Double quote |
-| &#92; &#92;| Backslash | 
-| \r | retour à la ligne| 
-| \t | Tab | 
-| \n | Nouvelle ligne | 
-| \xdd | Un byte en hexa | 
+ \\" : Double quote 
+&#92; &#92; : Backslash 
+\r : retour à la ligne
+\t  : Tab 
+\n : Nouvelle ligne 
+\xdd : Un byte en hexa 
+
+```
+rule stringText{
+
+    strings:
+        $hex_string = "Je te l'avais dit :\r"
+   
+    condition:
+        $hex_string
+}
+```
+
+**Ecrivez une règle YARA, permettant de détecter un texte contenant des caractères de tabulation**
 
 ##### Casse
 
@@ -149,12 +160,14 @@ rule noCase{
 
     strings:
         $hex_string = "MorBi" nocase
-    
+   
     condition:
         $hex_string
 }
 ```
-ici la règle toutes les écritures posisble de Morbi, morbi, MORBI ....
+ici la règle toutes les écritures possible de Morbi, morbi, MORBI ....
+
+**Ecrivez une règles qui indique quel texte contient "NOn uRna At"**
 
 #### XOR
 
