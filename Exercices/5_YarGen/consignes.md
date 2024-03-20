@@ -1,8 +1,13 @@
 ##Présentation de YarGen
 
+###Cet exercice ne peut malheuresement être effectué que sur des VMs configurés en local si vous utilisez des VMs installés dans le cloud, vous pouvez passer directement à l'exercice 6.
 YarGen est un outil informatique spécialisé utilisé dans le domaine de la sécurité informatique et de l'analyse de logiciels malveillants. Son rôle principal est de faciliter la création de règles YARA, un langage de détection de logiciels malveillants.
 Cet outil génère automatiquement ces règles en analysant un fichier potentiellement malveillant. Il identifie les séquences de caractères (ou chaînes) qui sont uniques à ce fichier.
 YarGen intègre une vaste base de données qui contient des chaînes et des opcodes (codes opérationnels) identifiés comme apparaissant également dans des fichiers qui ne sont pas malveillants. Cette base de données aide à distinguer les caractéristiques spécifiques des logiciels malveillants.
+
+##Prérequis
+
+Il est conseillé de diminuer la mémoire alloué à votre VM afin d'éviter certains problèmes lors de l'exécution de l'outil
 
 ##Installation de YarGen
 
