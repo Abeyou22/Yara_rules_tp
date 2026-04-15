@@ -42,8 +42,13 @@ Après avoir exécuté la commande ci-dessus, vous pouvez maintenant accéder à
 
 **Installation Windows**
 
+Yara :
 - Choisissez la realise la plus récente via ce [lien](https://github.com/VirusTotal/yara/releases) depuis la page GitHub de YARA.
 - Décompressez le fichier et lancez l'exécutable `yara.exe` depuis votre invit de commande.
+
+Python :
+- Choisissez la version portable de Python via ce [lien](https://www.python.org/ftp/python/3.13.13/python-3.13.13-embed-amd64.zip)
+- Décompressez le fichier et lancez un invité de commande à cet emplacement, puis tapper """python""", pour vérifier si Python se lance bien
 
 **Version précise**
 
