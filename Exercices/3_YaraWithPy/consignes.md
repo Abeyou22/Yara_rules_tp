@@ -38,11 +38,11 @@ Python Embedded téléchargé via ce lien, en version 3.13 [Lien]([https://www.p
 
 3. Extrait le fichier
 
-4. Copie le fichier """yara.cp313-win_amd64.pyd""" dans le dossier """python-3.13.12-embed-amd64\"""
+4. Copie le fichier ```yara.cp313-win_amd64.pyd``` dans le dossier ```python-3.13.12-embed-amd64```
 
-5. Ouvrir un invité de commande dans le dossier """python-3.13.12-embed-amd64""" et tapper """python"""
+5. Ouvrir un invité de commande dans le dossier ```python-3.13.12-embed-amd64``` et tapper ```python```
 
-6. Tapper ensuite """import yara""". Si aucune erreur, cela veut dire que l'import s'est bien passé
+6. Tapper ensuite ```import yara```. Si aucune erreur, cela veut dire que l'import s'est bien passé
 
 Accéder aussi à la documentation, ça va vous servir pour avancer dans le tp (https://yara.readthedocs.io/en/stable/yarapython.html)
 Maintenant que tout est  prêt, on peut commencer les exercices : 
