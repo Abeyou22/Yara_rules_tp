@@ -23,15 +23,30 @@ Pourquoi passer par python et pas lancer directement le logiciel ?
 - Enrichissement de la détection avec des informations complémentaires manuelles
 - Vérification directement dans le programme
 
-## Installation of YARA
+### Installer Python puis yara-python avec Python Embedded (sans pip)
 
-Pour utiliser yara dans python, il faut ```python 3``` et la librairie ```yara-python```
-On lance l'installation avec ```pip```
+Un fichier `.whl` (wheel) est une simple archive ZIP.
+Il est donc possible de l'extraire directement dans le répertoire de Python embedded, sans avoir à configurer pip.
 
-Essayer ```pip install yara-python``` en cas de refus ```python3 -m pip install yara-python```
+Python Embedded téléchargé via ce lien, en version 3.13 [Lien]([https://www.python.org/downloads/windows/](https://www.python.org/ftp/python/3.13.13/python-3.13.13-embed-amd64.zip))
+
+### Étapes
+
+1. Télécharge le fichier correspondant à la version 3.12 : [Lien](https://files.pythonhosted.org/packages/cc/a0/40b0291c8b24d13daf0e26538c9f3a0d843c38c6446dd17f36335bdd5b5f/yara_python-4.5.4-cp313-cp313-win_amd64.whl)
+
+2. Renomme le fichier en remplacant .Whl par.zip
+
+3. Extrait le fichier
+
+4. Copie le fichier """yara.cp313-win_amd64.pyd""" dans le dossier """python-3.13.12-embed-amd64\"""
+
+5. Ouvrir un invité de commande dans le dossier """python-3.13.12-embed-amd64""" et tapper """python"""
+
+6. Tapper ensuite """import yara""". Si aucune erreur, cela veut dire que l'import s'est bien passé
 
 Accéder aussi à la documentation, ça va vous servir pour avancer dans le tp (https://yara.readthedocs.io/en/stable/yarapython.html)
 Maintenant que tout est  prêt, on peut commencer les exercices : 
+
 
 ## Exercice 1 
 
@@ -52,7 +67,6 @@ Nous allons enrichir notre règle, notre affichage pour mieux comprendre les ret
 Construisez une règle qui détecte les png, les jfif, les jpg
 
 Enrichissez la sortie en ajoutant l'affichage de la méta donnée, du string qui a matché
-
 
 
 ## Exercice 3 
