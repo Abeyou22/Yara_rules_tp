@@ -42,7 +42,7 @@ Après avoir exécuté la commande ci-dessus, vous pouvez maintenant accéder à
 
 **Installation Windows**
 
-- Téléchargez ce [fichier zip](https://github.com/VirusTotal/yara/releases/tag/v4.2.0) depuis la page GitHub de YARA.
+- Choisissez la realise la plus récente via ce [lien](https://github.com/VirusTotal/yara/releases) depuis la page GitHub de YARA.
 - Décompressez le fichier et lancez l'exécutable `yara.exe` depuis votre invit de commande.
 
 **Version précise**
