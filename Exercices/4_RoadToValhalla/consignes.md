@@ -52,6 +52,7 @@ response = v.get_rules_json(tags=['APT'])
 Pour chaque condition, extrayez les règles YARA correspondantes de Valhalla.
 
 ## Questions
+(Afin de trouver la réponse à chaque question, modifiez votre fichier python pour filtrer votre base de règle)
 - Combien de règle le Valhalla possède t'il pour la démo ?
 - Combien de règle de type suspicious ? (Score : 60-74) ?
 - Donnez 6 tags utilisés par l'API.
