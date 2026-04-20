@@ -157,9 +157,9 @@ Trouvez les autres possibilités avec `yara --help`
 
 ### TAG
 
-Rajouter une règle Yara dans votre fichier sample.yar et ajoutez lui un TAG.
+Rajouter une règle Yara dans votre fichier sample.yar et ajoutez lui un TAG. (exemple : règle qui détecte une chaine de caractère)
 
-Pour ajouter un TAG :
+Pour ajouter un TAG (nom de règle) :
 
 ```c
   rule NomRule : TAG1 TAG2 {
