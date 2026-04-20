@@ -174,8 +174,5 @@ Pour ajouter un TAG (TEST STRING) :
 ### Finale
 
 Quelles commandes déclenche cette règle ? 
-Modifiez votre fichier texte de test en conséquence pour que :
-
- 1- les deux règles sans les tags détectent le fichier
- 2- seule votre nouvelle règle sonne positive avec le tag
+Modifiez votre fichier texte de test en conséquence pour que votre règle détecte le fichier
 
