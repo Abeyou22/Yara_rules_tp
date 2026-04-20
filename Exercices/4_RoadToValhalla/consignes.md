@@ -58,5 +58,5 @@ Pour chaque condition, extrayez les règles YARA correspondantes de Valhalla.
 - Donnez 6 tags utilisés par l'API.
 - Combien de règles comportent le tag 'MIDDLE_EAST' ?
 - Combien de règles sortent avec le keyword '2023_24055'
-- Que font-elles ? Quel est le score de la CVE associée ? (Récupérer la description et le score)
+- Que font-elles ? Quel est le score de la CVE associée ? (Récupérez la description et le score)
 
