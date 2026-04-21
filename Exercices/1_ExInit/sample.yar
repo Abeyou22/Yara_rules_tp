@@ -40,3 +40,5 @@ rule ExampleRule
     condition:
         $my_text_string or $my_hex_string
 }
+
+//This is a comment
